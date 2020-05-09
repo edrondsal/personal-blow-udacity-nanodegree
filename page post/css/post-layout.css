@@ -1,0 +1,210 @@
+/*--------------------------------------------------------
+Style Sheet for Layout of the Post site. UDACITY Project - Front End Developper Nanodegree
+version: 0.1
+last modified: 09/05/20
+author: E. RONDON
+----------------------------------------------------------*/
+
+/*-----------------------------------------------------------
+contents:
+=layout of site with grid layout
+=layout of header and navbar
+=layout of post section with nested grid layout 
+=meadia queries for responsivennes
+------------------------------------------------------------*/
+
+@import url("../../common/css/typography.css");
+
+/*TODO: erase box class when style added for each section*/
+.box{
+    border: 1px solid red;
+}
+
+/*main container with the grid layout of the site*/
+.post-grid-container{
+    box-sizing: border-box;
+    width: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px auto 50px;
+    grid-template-areas:
+    "hd"
+    "post"
+    "ft";
+} 
+
+/*grid areas definition*/
+.header-section-layout{
+    box-sizing: border-box;
+    grid-area: hd;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.post-section-layout{
+    box-sizing: border-box;
+    grid-area: post;
+}
+
+.footer-section-layout{
+    box-sizing: border-box;
+    grid-area: ft;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Layout for each section*/
+/*layout of the header section*/
+.navbar-global-container{
+    box-sizing: border-box;
+    width: auto;
+    min-width: 600px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.navbar-flex-container{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar-flex-item{
+    box-sizing: border-box;
+    flex: 1;
+}
+/*sub grid layout for contentsection centered with max width 1200px*/
+.post-content-container{
+    box-sizing: border-box;
+    width: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: auto;
+    grid-template-areas: "cntn cntn cntn cntn cntn cntn cntn rbar rbar rbar";
+}
+.post-content-layout{
+    box-sizing: border-box;
+    grid-area: cntn;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px 0 10px 0;
+}
+.post-right-bar-layout{
+    box-sizing: border-box;
+    grid-area: rbar;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px 0 10px 0;
+}
+
+/*layout for devices with width inferior or equal to 600px*/
+@media(max-width:600px){
+    .post-grid-container{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas:
+        "hd"
+        "post"
+        "ft";
+    }
+    .header-section-layout{
+        box-sizing: border-box;
+        grid-area: hd;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+    }
+    .footer-section-layout{
+        box-sizing: border-box;
+        grid-area: ft;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-global-container{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 0;
+        min-width: 100%;
+    }
+    .navbar-flex-container{
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .navbar-flex-item{
+        box-sizing: border-box;
+        flex: 1 0 100%;
+    } 
+    .post-content-container{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        grid-template-areas: "cntn" 
+        "rbar";
+    }
+}
+
+/*layour for devices with width between 601px and 900px*/
+@media(min-width:601px) and (max-width:900px){
+    .post-grid-container{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas:
+        "hd"
+        "post"
+        "ft";
+    }
+    .header-section-layout{
+        box-sizing: border-box;
+        grid-area: hd;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+    }
+    .navbar-global-container{
+        box-sizing: border-box;
+        width: auto;
+        min-width: 500px;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .post-content-container{
+        box-sizing: border-box;
+        width: auto;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(10, 10%);
+        grid-template-rows: auto;
+        grid-template-areas: "cntn cntn cntn cntn cntn cntn rbar rbar rbar rbar";
+    }
+}
+
+

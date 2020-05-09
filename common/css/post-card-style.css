@@ -1,0 +1,26 @@
+/*--------------------------------------------------------
+Style Sheet for Post Card component. UDACITY Project - Front End Developper Nanodegree
+version: 0.1
+last modified: 09/05/20
+author: E. RONDON
+----------------------------------------------------------*/
+
+/*-----------------------------------------------------------
+contents:
+=card container layout
+=image layout
+=category - date layout
+=title - layout
+=sneak peak- layout
+=buttons - layout
+------------------------------------------------------------*/
+
+/*main container with the grid layout of the site*/
+.card-container{
+    box-sizing: border-box;
+    width: 90%;
+    margin: 20px 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) ;
+    transition: 0.3s;
+    border-radius: 5px;
+}

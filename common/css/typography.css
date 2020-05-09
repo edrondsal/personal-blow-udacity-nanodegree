@@ -1,0 +1,41 @@
+/*--------------------------------------------------------
+Style Sheet for typoraphy. UDACITY Project - Front End Developper Nanodegree
+version: 0.1
+last modified: 09/05/20
+author: E. RONDON
+----------------------------------------------------------*/
+
+/*-----------------------------------------------------------
+contents:
+=layout of site with grid layout
+=layout of container with nested grid layout 
+=meadia queries for responsivennes
+------------------------------------------------------------*/
+
+h1{
+    margin: 0 0;
+}
+
+h2{
+    margin: 0 0;
+}
+
+h3{
+    margin: 0 0;
+}
+
+h4{
+    margin: 0 0;
+}
+
+h5{
+    margin: 0 0;
+}
+
+h6{
+    margin: 0 0;
+}
+
+p{
+    margin: 0 0;
+}
