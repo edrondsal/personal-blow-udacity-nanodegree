@@ -7,7 +7,72 @@ author: E. RONDON
 
 /*-----------------------------------------------------------
 contents:
-=layout of site with grid layout
-=layout of container with nested grid layout 
-=meadia queries for responsivennes
+=font familly for the entire site
+=design system of typography
 ------------------------------------------------------------*/
+
+/*the design system of the page is composed of a light theme with following colors:
+Light theme color : white
+principal color: #1565c0
+principal color dark: #003c8f
+principal color light: #5e92f3
+secondary color: #757575
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
+
+/*font family for normal text*/
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+/*font family for headers*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/*font size for each type of header*/
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+h3{
+    font-size: 32px;
+}
+
+h4{
+    font-size: 28px;
+}
+
+h5{
+    font-size: 24px;
+}
+
+h6{
+    font-size: 20px;
+}
+
+/*color text design by class selector*/
+.white-color-text{
+    color: white;
+}
+.principal-color-text{
+    color: #1565c0;
+}
+.principal-color-dark-text{
+    color: #003c8f;
+}
+.principal-color-light-text{
+    color: #5e92f3;
+}
+.secondary-color-text{
+    color: #757575;
+}

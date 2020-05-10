@@ -45,6 +45,7 @@ contents:
 .post-section-layout{
     box-sizing: border-box;
     grid-area: post;
+    padding: 20px 0;
 }
 
 .footer-section-layout{

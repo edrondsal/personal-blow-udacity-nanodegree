@@ -37,3 +37,11 @@ button{
     background-color: #e8e8e8;
 }
 
+/*responsive image background*/
+.container-responsive-image-background-sytle{
+  background-position: center center;
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-size: cover;
+  background-color: #464646;
+}
