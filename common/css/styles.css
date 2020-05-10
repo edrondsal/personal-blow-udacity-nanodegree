@@ -1,0 +1,39 @@
+/*--------------------------------------------------------
+Global styles for the entire site. UDACITY Project - Front End Developper Nanodegree
+version: 0.1
+last modified: 10/05/20
+author: E. RONDON
+----------------------------------------------------------*/
+
+/*-----------------------------------------------------------
+contents:
+=Global Selectors
+=Site Style global to all pages
+------------------------------------------------------------*/
+
+/*reset of global values.*/
+/*Items shall not have margin and padding unless defined in the stylesheets, all items shall be border-box.
+Unless defined in stylesheet for class or id selector*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*list items shall not have bullet points unless defined in stylesheet for class or id selector*/
+ul{
+    list-style-type: none;
+}
+/*hyperlinks shall no have underline unless defined in stylesheet for class or id selector*/
+a{
+    text-decoration: none;
+}
+/*buttons shall have cursor pointer by default unless defined in stylesheet for class or id selector*/
+button{
+    cursor: pointer;
+}
+
+/*style of the site*/
+.site-background{
+    background-color: #e8e8e8;
+}
+

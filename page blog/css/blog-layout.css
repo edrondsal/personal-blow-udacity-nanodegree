@@ -1,7 +1,7 @@
 /*--------------------------------------------------------
 Style Sheet for Layout of My Blog site. UDACITY Project - Front End Developper Nanodegree
-version: 0.1
-last modified: 09/05/20
+version: 0.2
+last modified: 10/05/20
 author: E. RONDON
 ----------------------------------------------------------*/
 
@@ -14,16 +14,12 @@ contents:
 =media queries for responsivennes
 ------------------------------------------------------------*/
 
+@import url("../../common/css/styles.css");
 @import url("../../common/css/typography.css");
-
-/*TODO: erase box class when style added for each section*/
-.box{
-    border: 1px solid red;
-}
+@import url("../../common/css/header.css");
 
 /*main container with the grid layout of the site*/
 .blog-grid-container{
-    box-sizing: border-box;
     width: auto;
     margin: 0 auto;
     display: grid;
@@ -38,27 +34,23 @@ contents:
 
 /*grid areas definition*/
 .header-section-layout{
-    box-sizing: border-box;
     grid-area: hd;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
+    padding: 0 30px;
 }
 
 .category-section-layout{
-    box-sizing: border-box;
     grid-area: ctg;
 }
 
 .content-section-layout{
-    box-sizing: border-box;
     grid-area: ctnt;
 }
 
 .footer-section-layout{
-    box-sizing: border-box;
     grid-area: ft;
     display: flex;
     flex-flow: row wrap;
@@ -70,27 +62,30 @@ contents:
 /*Layout for each section*/
 /*layout of the header section*/
 .navbar-global-container{
-    box-sizing: border-box;
     width: auto;
     min-width: 600px;
     max-width: 960px;
     margin: 0 auto;
 }
 .navbar-flex-container{
-    box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
+    margin: 10px 0;
 }
 .navbar-flex-item{
-    box-sizing: border-box;
     flex: 1;
+}
+.header-logo-layout{
+    margin: 10px 0;
+}
+.header-button-layout{
+    margin: 10px 0;
 }
 
 /*flex layout of the category section centered with max width 1200px*/
 .category-flex-container{
-    box-sizing: border-box;
     width: auto;
     max-width: 1200px;
     margin: 0 auto;
@@ -102,7 +97,6 @@ contents:
 
 /*sub grid layout for contentsection centered with max width 1200px*/
 .content-grid-container{
-    box-sizing: border-box;
     width: auto;
     max-width: 1200px;
     margin: 0 auto;
@@ -112,19 +106,16 @@ contents:
     grid-template-areas: "posts posts posts posts posts posts posts rbar rbar rbar";
 }
 .posts-section-layout{
-    box-sizing: border-box;
     grid-area: posts;
     display: flex;
     flex-flow: row wrap;
     padding: 10px 0 10px 0;
 }
 .right-bar-section-layout{
-    box-sizing: border-box;
     grid-area: rbar;
 }
 
 .post-flex-item{
-    box-sizing: border-box;
     flex:1 1 50%;
     max-width: 50%;
 }
@@ -133,7 +124,6 @@ contents:
 /*layout for devices with width inferior or equal to 600px*/
 @media(max-width:600px){
     .blog-grid-container{
-        box-sizing: border-box;
         width: 100%;
         margin: 0 0;
         display: grid;
@@ -146,7 +136,6 @@ contents:
         "ft";
     } 
     .header-section-layout{
-        box-sizing: border-box;
         grid-area: hd;
         display: flex;
         flex-flow: column wrap;
@@ -155,7 +144,6 @@ contents:
         padding: 10px 10px;
     }
     .footer-section-layout{
-        box-sizing: border-box;
         grid-area: ft;
         display: flex;
         flex-flow: column wrap;
@@ -163,24 +151,21 @@ contents:
         align-items: center;
     }
     .navbar-global-container{
-        box-sizing: border-box;
         width: 100%;
         margin: 0 0;
         min-width: 100%;
     }
     .navbar-flex-container{
-        box-sizing: border-box;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
         justify-content: space-around;
     }
     .navbar-flex-item{
-        box-sizing: border-box;
         flex: 1 0 100%;
+        margin: 10px 0;
     }
     .content-grid-container{
-        box-sizing: border-box;
         width: 100%;
         margin: 0 0;
         display: grid;
@@ -190,14 +175,12 @@ contents:
         "rbar";
     }
     .posts-section-layout{
-        box-sizing: border-box;
         grid-area: posts;
         display: flex;
         flex-flow: column wrap;
         padding: 10px 0 10px 0;
     }
     .post-flex-item{
-        box-sizing: border-box;
         flex:1 1 100%;
         max-width: 100%;
     }
@@ -206,7 +189,6 @@ contents:
 /*layour for devices with width between 601px and 900px*/
 @media(min-width:601px) and (max-width:900px){
     .blog-grid-container{
-        box-sizing: border-box;
         width: 100%;
         margin: 0 0;
         display: grid;
@@ -219,7 +201,6 @@ contents:
         "ft";
     }
     .header-section-layout{
-        box-sizing: border-box;
         grid-area: hd;
         display: flex;
         flex-flow: column wrap;
@@ -228,14 +209,12 @@ contents:
         padding: 10px 10px;
     }
     .navbar-global-container{
-        box-sizing: border-box;
         width: auto;
         min-width: 500px;
         max-width: 960px;
         margin: 0 auto;
     }
     .content-grid-container{
-        box-sizing: border-box;
         width: auto;
         max-width: 1200px;
         margin: 0 auto;
@@ -245,14 +224,12 @@ contents:
         grid-template-areas: "posts posts posts posts posts posts rbar rbar rbar rbar";
     }
     .posts-section-layout{
-        box-sizing: border-box;
         grid-area: posts;
         display: flex;
         flex-flow: column wrap;
         padding: 10px 0 10px 0;
     }
     .post-flex-item{
-        box-sizing: border-box;
         flex:1 1 100%;
         max-width: 100%;
     }

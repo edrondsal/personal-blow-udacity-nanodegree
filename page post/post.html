@@ -1,9 +1,7 @@
-<!--
-Post site. UDACITY Project - Front End Developper Nanodegree
-version: 0.1
-last modified: 09/05/20
-author: E. RONDON
--->
+<!--Post site. UDACITY Project - Front End Developper Nanodegree
+version: 0.2
+last modified: 10/05/20
+author: E. RONDON-->
 <!doctype html>
 <html>
     <head>
@@ -12,35 +10,34 @@ author: E. RONDON
         <title>My Post</title>
         <link rel="stylesheet" href="css/post-layout.css">
     </head>
-    <body>
+    <body class="site-background">
         <div class="post-grid-container">
             <!--TODO: complete the site with the elements styles and no only grid layout-->
-            <!--TODO: erase box class when style added for each section-->
             <!-- Header containing the Navbar of the Post-->
-            <header class="header-section-layout box">
-                <img class="" src="" alt="blog logo">
-                <nav class="navbar-global-container box">
-                    <ul class="navbar-flex-container box">
-                        <li><a class="navbar-flex-item" href="#">Home</a></li>
-                        <li><a class="navbar-flex-item" href="#">About Me</a></li>
-                        <li><a class="navbar-flex-item" href="#">Contact</a></li>
+            <header class="header-section-layout header-section-style">
+                <img class="header-logo-layout header-logo-style" src="../common/img/logo-my-blog-blue.png" alt="blog logo">
+                <nav class="navbar-global-container">
+                    <ul class="navbar-flex-container navbar-container-style">
+                        <li class="navbar-flex-item"><a class="navbar-item-style" href="#">HOME</a></li>
+                        <li class="navbar-flex-item"><a class="navbar-item-style" href="#">ABOUT ME</a></li>
+                        <li class="navbar-flex-item"><a class="navbar-item-style" href="#">CONTACT</a></li>
                     </ul>
                 </nav>
-                <a class="" href="#"><button class="">Subscribe</button></a>
+                <button class="header-button-layout header-button-style">SUBSCRIBE</button>
             </header>
             <!-- Section for the post-->
-            <section class="post-section-layout box">
-                <div class="post-content-container box">
-                    <div class="post-content-layout box">
+            <section class="post-section-layout">
+                <div class="post-content-container">
+                    <div class="post-content-layout">
                        Post     
                     </div>
-                    <div class="post-right-bar-layout box">
+                    <div class="post-right-bar-layout">
                         Right Bar
                     </div>
                 </div>
             </section>  
             <!-- Footer of the bog-->
-            <footer class="footer-section-layout box">
+            <footer class="footer-section-layout">
                 <p>© 2020 Copyright: Eduardo Rondon</p>
             </footer>   
         </div>

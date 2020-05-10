@@ -1,0 +1,60 @@
+/*--------------------------------------------------------
+Style Sheet for Header component. UDACITY Project - Front End Developper Nanodegree
+version: 0.1
+last modified: 10/05/20
+author: E. RONDON
+----------------------------------------------------------*/
+
+/*-----------------------------------------------------------
+contents:
+=special typography for header
+=container style
+=logo style
+=navbar style
+=button style
+------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+
+/*the design system of the page is composed of a light theme with following colors:
+Light theme color : white
+principal color: #1565c0
+principal color dark: #003c8f
+principal color light: #5e92f3
+secondary color: #757575
+*/
+
+/*style of the header section to use in all pages of the site: blog and post*/
+.header-section-style{
+    background-color: white;
+    box-shadow: 0 3px 4px 0px rgba(0,0,0,0.2);
+}
+/*logo syle*/
+.header-logo-style{
+    cursor: pointer;
+}
+/*style of the navbar*/
+.navbar-container-style{
+    font-family: 'Balsamiq Sans', cursive;
+    color: #757575;
+}
+.navbar-item-style:visited{
+    color: #757575; /*no difference between visited and unvisited page of the navbar*/
+}
+.navbar-item-style:hover{
+    color: #1565c0;
+}
+.navbar-item-style:active{
+    color: #003c8f;
+}
+/*style of subscribe button*/
+.header-button-style{
+    padding: 10px 10px;
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+    background-color: #1565c0;
+    border: none;
+    border-radius: 5%;
+}
+.header-button-style:active{
+    background-color: #003c8f;
+}
