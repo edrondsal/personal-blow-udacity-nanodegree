@@ -1,6 +1,6 @@
 /*--------------------------------------------------------
 Style Sheet for Layout of the Post site. UDACITY Project - Front End Developper Nanodegree
-version: 0.2
+version: 0.3
 last modified: 10/05/20
 author: E. RONDON
 ----------------------------------------------------------*/
@@ -12,10 +12,11 @@ contents:
 =layout of post section with nested grid layout 
 =meadia queries for responsivennes
 ------------------------------------------------------------*/
-
-@import url("../../common/css/styles.css");
 @import url("../../common/css/typography.css");
+@import url("../../common/css/styles.css");
 @import url("../../common/css/header.css");
+@import url("../../common/css/footer.css");
+@import url("../../common/css/list-card-style.css");
 
 
 /*main container with the grid layout of the site*/

@@ -1,0 +1,33 @@
+/*--------------------------------------------------------
+Style Sheet for post list item. UDACITY Project - Front End Developper Nanodegree
+version: 1.0
+last modified: 10/05/20
+author: E. RONDON
+----------------------------------------------------------*/
+
+/*-----------------------------------------------------------
+contents:
+=row layout
+=image layout
+=content layout
+------------------------------------------------------------*/
+
+/*post row item layout*/
+.post-row-item-container{
+    padding: 5px 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+/*image responsive layout and style*/
+.post-row-item-image{
+    width: 30%;
+    height: auto; 
+}
+/*content layout*/
+.post-row-content-layout{
+    flex: 1;
+    padding: 0 5px;
+    display: flex;
+    flex-flow: column wrap;
+}

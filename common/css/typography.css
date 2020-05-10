@@ -1,6 +1,6 @@
 /*--------------------------------------------------------
 Style Sheet for typoraphy. UDACITY Project - Front End Developper Nanodegree
-version: 0.1
+version: 0.2
 last modified: 10/05/20
 author: E. RONDON
 ----------------------------------------------------------*/
@@ -25,6 +25,7 @@ secondary color: #757575
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    color: black;
 }
 /*font family for headers*/
 h1,
@@ -39,25 +40,21 @@ h6{
 h1{
     font-size: 40px;
 }
-
 h2{
     font-size: 36px;
 }
-
 h3{
     font-size: 32px;
 }
-
 h4{
     font-size: 28px;
 }
-
 h5{
-    font-size: 24px;
+    font-size: 18px;
 }
-
 h6{
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 /*color text design by class selector*/
@@ -75,4 +72,10 @@ h6{
 }
 .secondary-color-text{
     color: #757575;
+}
+
+/*button text*/
+.button-typo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
 }

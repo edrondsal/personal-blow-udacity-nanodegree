@@ -1,0 +1,45 @@
+/*--------------------------------------------------------
+Style Sheet for list Card component. UDACITY Project - Front End Developper Nanodegree
+version: 1.0
+last modified: 10/05/20
+author: E. RONDON
+----------------------------------------------------------*/
+
+/*-----------------------------------------------------------
+contents:
+=card container layout
+=title - layout
+=items - layout
+------------------------------------------------------------*/
+
+/*main container with the grid layout of the site*/
+.list-card-container{
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+/*card body*/
+.list-card-body-container{
+    padding: 5px 5px;
+    display: flex;
+    flex-flow: column wrap;
+}
+/*title flex item*/
+.list-card-title-flex-item-layout{
+    width: auto;
+    margin: 6px auto;
+}
+/*title separator*/
+.list-card-title-separator{
+    height:2px;
+    border-width:0;
+    color:#efefef;
+    background-color:#efefef;
+    margin: 0 0 2px 0;
+}
+.list-card-item-layout{
+    width: 100%;
+    max-width: 100%;
+    margin: 2px 0 2px 0;
+}
