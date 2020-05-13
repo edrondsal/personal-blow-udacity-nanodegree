@@ -1,7 +1,7 @@
 /*--------------------------------------------------------
 Style Sheet for Layout of the Post site. UDACITY Project - Front End Developper Nanodegree
-version: 0.3
-last modified: 10/05/20
+version: 1.0
+last modified: 13/05/20
 author: E. RONDON
 ----------------------------------------------------------*/
 
@@ -16,12 +16,14 @@ contents:
 @import url("../../common/css/styles.css");
 @import url("../../common/css/header.css");
 @import url("../../common/css/footer.css");
+@import url("../../common/css/post-content-style.css");
 @import url("../../common/css/list-card-style.css");
+@import url("../../common/css/post-list-item.css");
+@import url("../../common/css/about-me-card.css");
 
 
 /*main container with the grid layout of the site*/
 .post-grid-container{
-    box-sizing: border-box;
     width: auto;
     margin: 0 auto;
     display: grid;
@@ -44,16 +46,14 @@ contents:
 }
 
 .post-section-layout{
-    box-sizing: border-box;
     grid-area: post;
     padding: 20px 0;
 }
 
 .footer-section-layout{
-    box-sizing: border-box;
     grid-area: ft;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
 }
@@ -84,28 +84,30 @@ contents:
 }
 /*sub grid layout for contentsection centered with max width 1200px*/
 .post-content-container{
-    box-sizing: border-box;
     width: auto;
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: auto;
-    grid-template-areas: "cntn cntn cntn cntn cntn cntn cntn rbar rbar rbar";
+    grid-template-areas: "cntn cntn cntn cntn cntn cntn cntn cntn rbar rbar";
 }
 .post-content-layout{
-    box-sizing: border-box;
     grid-area: cntn;
     display: flex;
     flex-flow: column wrap;
-    padding: 10px 0 10px 0;
+    margin: 0 10px;
 }
 .post-right-bar-layout{
-    box-sizing: border-box;
     grid-area: rbar;
     display: flex;
     flex-flow: column wrap;
-    padding: 10px 0 10px 0;
+}
+
+.right-bar-flex-item{
+    width: 97%;
+    max-width: 97%;
+    margin: 0px 1.5% 20px 1.5%;
 }
 
 /*layout for devices with width inferior or equal to 600px*/
@@ -116,14 +118,13 @@ contents:
         margin: 0 0;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: repeat(3,auto);
+        grid-template-rows: auto auto 50px;
         grid-template-areas:
         "hd"
         "post"
         "ft";
     }
     .header-section-layout{
-        box-sizing: border-box;
         grid-area: hd;
         display: flex;
         flex-flow: column wrap;
@@ -132,7 +133,6 @@ contents:
         padding: 10px 10px;
     }
     .footer-section-layout{
-        box-sizing: border-box;
         grid-area: ft;
         display: flex;
         flex-flow: column wrap;
@@ -140,13 +140,11 @@ contents:
         align-items: center;
     }
     .navbar-global-container{
-        box-sizing: border-box;
         width: 100%;
         margin: 0 0;
         min-width: 100%;
     }
     .navbar-flex-container{
-        box-sizing: border-box;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -166,6 +164,13 @@ contents:
         grid-template-areas: "cntn" 
         "rbar";
     }
+    .post-content-layout{
+        grid-area: cntn;
+        width: 98%;
+        margin:10px 1%;
+        display: flex;
+        flex-flow: column wrap;
+    }
 }
 
 /*layour for devices with width between 601px and 900px*/
@@ -176,14 +181,13 @@ contents:
         margin: 0 0;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: repeat(3,auto);
+        grid-template-rows: auto auto 50px;
         grid-template-areas:
         "hd"
         "post"
         "ft";
     }
     .header-section-layout{
-        box-sizing: border-box;
         grid-area: hd;
         display: flex;
         flex-flow: column wrap;
@@ -192,7 +196,6 @@ contents:
         padding: 10px 10px;
     }
     .navbar-global-container{
-        box-sizing: border-box;
         width: auto;
         min-width: 500px;
         max-width: 960px;
@@ -206,7 +209,14 @@ contents:
         display: grid;
         grid-template-columns: repeat(10, 10%);
         grid-template-rows: auto;
-        grid-template-areas: "cntn cntn cntn cntn cntn cntn rbar rbar rbar rbar";
+        grid-template-areas: "cntn cntn cntn cntn cntn cntn cntn rbar rbar rbar";
+    }
+    .post-content-layout{
+        grid-area: cntn;
+        width: 98%;
+        margin:0 1%;
+        display: flex;
+        flex-flow: column wrap;
     }
 }
 

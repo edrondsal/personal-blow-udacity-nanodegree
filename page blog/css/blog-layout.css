@@ -116,12 +116,12 @@ contents:
     grid-area: posts;
     display: flex;
     flex-flow: row wrap;
-    padding: 10px 0 10px 0;
+    padding: 10px 0;
 }
 .right-bar-section-layout{
     grid-area: rbar;
     flex-flow: column wrap;
-    padding: 10px 0 10px 0;
+    padding: 10px 0;
 }
 
 .post-flex-item{

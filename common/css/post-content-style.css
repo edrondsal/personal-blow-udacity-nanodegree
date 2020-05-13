@@ -1,0 +1,127 @@
+/*--------------------------------------------------------
+styles for the post pages. UDACITY Project - Front End Developper Nanodegree
+version: 1.0
+last modified: 13/05/20
+author: E. RONDON
+----------------------------------------------------------*/
+
+/*-----------------------------------------------------------
+contents:
+=Post Container
+=Post Content
+------------------------------------------------------------*/
+
+/*Post container style*/
+.post-content-style{
+    background-color: white;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+/*Post content style*/
+.post-image-style{
+    width: 100%;
+    height: auto;
+}
+.post-image-caption-style{
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    align-self: center;
+}
+.post-title-style{
+    margin: 20px 30px 5px 30px;
+}
+.post-content-separator{
+    height:2px;
+    border-width:0;
+    color:#efefef;
+    background-color:#efefef;
+    margin: 5px 20px;
+}
+.post-first-paragraph-style{
+    margin: 20px 20px 0 20px;
+    padding: 5px 10px;
+}
+.post-inner-paragraph-style{
+    margin: 5px 20px;
+    padding: 5px 10px;
+}
+.post-citation-layout{
+    align-self: center;
+    display: flex;
+    flex-flow: column wrap;
+    border-left: 3px solid #003c8f;
+    padding: 10px;
+    min-height: 50px;
+    margin: 10px 0;
+}
+.post-citation-style{
+    font-style: italic;
+}
+.post-double-image-layout{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px 30px;
+}
+.post-image-flex-item{
+    flex:1 1 48%;
+    max-width: 48%;
+    height: auto;
+    margin: 10px 1%;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.share-button-row-style{
+    align-self: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 20px;
+}
+.share-button-style{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding:10px 10px;
+    margin: 5px 5px;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.share-button-image-style{
+    width: 16px;
+    height: auto;
+    margin: 0 5px 0 0;
+}
+.share-button-name-style{
+    font-size: 12px;
+    color: white;
+}
+.facebook-button-style{
+    background-color: #3b5998;
+}
+.twitter-button-style{
+    background-color: #00acee;
+}
+.linkedin-button-style{
+    background-color: #0072b1;
+}
+
+
+/*layout for devices with width inferior or equal to 600px*/
+@media(max-width:600px){
+    .post-citation-layout{
+        max-width: 300px;
+    }
+    .share-button-row-style{
+        flex-flow: column wrap;
+    }
+}
+
+@media(min-width:601px) and (max-width:900px){
+    .post-citation-layout{
+        max-width: 400px;
+    }
+}

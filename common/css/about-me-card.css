@@ -1,7 +1,7 @@
 /*--------------------------------------------------------
-Style Sheet for list Card component. UDACITY Project - Front End Developper Nanodegree
+Style Sheet for about me Card component. UDACITY Project - Front End Developper Nanodegree
 version: 1.0
-last modified: 10/05/20
+last modified: 13/05/20
 author: E. RONDON
 ----------------------------------------------------------*/
 
@@ -13,33 +13,31 @@ contents:
 ------------------------------------------------------------*/
 
 /*main container of the card*/
-.list-card-container{
+.about-me-card-container{
     width: 100%;
     background-color: white;
     box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px;
 }
+/*image responsive layout and style*/
+.about-me-card-image{
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
 /*card body*/
-.list-card-body-container{
-    padding: 5px 5px;
+.about-me-card-body-container{
+    padding: 4px 10px;
     display: flex;
     flex-flow: column wrap;
 }
-/*title flex item*/
-.list-card-title-flex-item-layout{
-    width: auto;
-    margin: 6px auto;
+.about-me-card-title{
+    align-self: center;
+    margin: 5px 0;
 }
-/*title separator*/
-.list-card-title-separator{
-    height:2px;
-    border-width:0;
-    color:#efefef;
-    background-color:#efefef;
-    margin: 0 0 2px 0;
-}
-.list-card-item-layout{
-    width: 100%;
-    max-width: 100%;
-    margin: 2px 0 2px 0;
+.about-me-pharagraph{
+    align-self: center;
+    margin: 10px 10px;
+    font-style: italic;
+    font-size: 12px;
 }

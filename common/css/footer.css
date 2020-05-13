@@ -1,7 +1,7 @@
 /*--------------------------------------------------------
 Style Sheet for Footer component. UDACITY Project - Front End Developper Nanodegree
 version: 1.0
-last modified: 10/05/20
+last modified: 13/05/20
 author: E. RONDON
 ----------------------------------------------------------*/
 
@@ -12,4 +12,18 @@ contents:
 
 .footer-section-style{
     background-color: #212121;
+}
+
+.footer-link-attribute-author{
+    color: white;
+    margin: 3px 0;
+}
+.footer-link-attribute-author:visited{
+    color: white;
+}
+.footer-link-attribute-author:hover{
+    color: #1565c0;
+}
+.footer-link-attribute-author:active{
+    color: #003c8f;
 }

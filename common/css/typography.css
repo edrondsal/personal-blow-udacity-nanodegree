@@ -1,7 +1,7 @@
 /*--------------------------------------------------------
 Style Sheet for typoraphy. UDACITY Project - Front End Developper Nanodegree
-version: 0.2
-last modified: 10/05/20
+version: 1.0
+last modified: 13/05/20
 author: E. RONDON
 ----------------------------------------------------------*/
 
@@ -41,16 +41,17 @@ h1{
     font-size: 40px;
 }
 h2{
-    font-size: 36px;
-}
-h3{
     font-size: 32px;
 }
+h3{
+    font-size: 26px;
+}
 h4{
-    font-size: 28px;
+    font-size: 24px;
 }
 h5{
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: bold;
 }
 h6{
     font-size: 15px;

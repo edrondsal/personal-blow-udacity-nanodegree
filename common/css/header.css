@@ -1,7 +1,7 @@
 /*--------------------------------------------------------
 Style Sheet for Header component. UDACITY Project - Front End Developper Nanodegree
 version: 1.0
-last modified: 10/05/20
+last modified: 13/05/20
 author: E. RONDON
 ----------------------------------------------------------*/
 
@@ -51,11 +51,21 @@ secondary color: #757575
 .header-button-style{
     padding: 10px 10px;
     font-family: 'Balsamiq Sans', cursive;
+    font-size: 14px;
     color: white;
     background-color: #1565c0;
     border: none;
     border-radius: 5px;
 }
+.header-button-style:hover{
+    color: white;
+    background-color:  #003c8f;
+}
 .header-button-style:active{
-    background-color: #003c8f;
+    color: #003c8f;
+    background-color:  white;
+}
+.header-button-style:visited{
+    color: white;
+    background-color: #1565c0;
 }
