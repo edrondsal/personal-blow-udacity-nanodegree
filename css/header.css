@@ -38,6 +38,9 @@ secondary color: #757575
     font-family: 'Balsamiq Sans', cursive;
     color: #757575;
 }
+.navbar-item-style{
+    color: #757575;
+}
 .navbar-item-style:visited{
     color: #757575; /*no difference between visited and unvisited page of the navbar*/
 }

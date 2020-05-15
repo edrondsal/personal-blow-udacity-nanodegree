@@ -55,9 +55,7 @@ contents:
     min-height: 50px;
     margin: 10px 0;
 }
-.post-citation-style{
-    font-style: italic;
-}
+
 .post-double-image-layout{
     display: flex;
     flex-flow: row wrap;

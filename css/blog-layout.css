@@ -1,7 +1,7 @@
 /*--------------------------------------------------------
-Style Sheet for Layout of the Post site. UDACITY Project - Front End Developper Nanodegree
+Style Sheet for Layout of My Blog site. UDACITY Project - Front End Developper Nanodegree
 version: 1.0
-last modified: 13/05/20
+last modified: 10/05/20
 author: E. RONDON
 ----------------------------------------------------------*/
 
@@ -9,30 +9,31 @@ author: E. RONDON
 contents:
 =layout of site with grid layout
 =layout of header and navbar
-=layout of post section with nested grid layout 
-=meadia queries for responsivennes
+=layout of category section
+=layout of container section (all posts) with nested grid layout 
+=media queries for responsivennes
 ------------------------------------------------------------*/
-@import url("../../common/css/typography.css");
-@import url("../../common/css/styles.css");
-@import url("../../common/css/header.css");
-@import url("../../common/css/footer.css");
-@import url("../../common/css/post-content-style.css");
-@import url("../../common/css/list-card-style.css");
-@import url("../../common/css/post-list-item.css");
-@import url("../../common/css/about-me-card.css");
+@import "typography.css";
+@import "styles.css";
+@import "header.css";
+@import "posts-card-style.css";
+@import "footer.css";
+@import "list-card-style.css";
+@import "post-list-item.css";
 
 
 /*main container with the grid layout of the site*/
-.post-grid-container{
+.blog-grid-container{
     width: auto;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 80px auto 50px;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: 80px 350px auto 50px;
     grid-template-areas:
-    "hd"
-    "post"
-    "ft";
+    "hd hd hd hd hd hd hd hd hd hd"
+    "ctg ctg ctg ctg ctg ctg ctg ctg ctg ctg"
+    "ctnt ctnt ctnt ctnt ctnt ctnt ctnt ctnt ctnt ctnt"
+    "ft ft ft ft ft ft ft ft ft ft";
 } 
 
 /*grid areas definition*/
@@ -45,18 +46,24 @@ contents:
     padding: 0 30px;
 }
 
-.post-section-layout{
-    grid-area: post;
+.category-section-layout{
+    grid-area: ctg;
+    background-image: url("../img/category-image-photo.JPG");
+}
+
+.content-section-layout{
+    grid-area: ctnt;
     padding: 20px 0;
 }
 
 .footer-section-layout{
     grid-area: ft;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
+
 
 /*Layout for each section*/
 /*layout of the header section*/
@@ -82,48 +89,68 @@ contents:
 .header-button-layout{
     margin: 10px 0;
 }
+
+/*flex layout of the category section centered with max width 1200px*/
+.category-flex-container{
+    width: auto;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /*sub grid layout for contentsection centered with max width 1200px*/
-.post-content-container{
+.content-grid-container{
     width: auto;
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: auto;
-    grid-template-areas: "cntn cntn cntn cntn cntn cntn cntn cntn rbar rbar";
+    grid-template-areas: "posts posts posts posts posts posts posts posts rbar rbar";
 }
-.post-content-layout{
-    grid-area: cntn;
+.posts-section-layout{
+    grid-area: posts;
     display: flex;
-    flex-flow: column wrap;
-    margin: 0 10px;
+    flex-flow: row wrap;
+    padding: 10px 0;
 }
-.post-right-bar-layout{
+.right-bar-section-layout{
     grid-area: rbar;
-    display: flex;
     flex-flow: column wrap;
+    padding: 10px 0;
+}
+
+.post-flex-item{
+    flex:1 1 48%;
+    max-width: 48%;
+    margin: 10px 1%;
 }
 
 .right-bar-flex-item{
     width: 97%;
     max-width: 97%;
-    margin: 0px 1.5% 20px 1.5%;
+    margin: 10px 1.5% 20px 1.5%;
 }
+
 
 /*layout for devices with width inferior or equal to 600px*/
 @media(max-width:600px){
-    .post-grid-container{
-        box-sizing: border-box;
+    .blog-grid-container{
         width: 100%;
         margin: 0 0;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: auto auto 50px;
+        grid-template-rows: auto 350px auto 50px;
         grid-template-areas:
         "hd"
-        "post"
+        "ctg"
+        "ctnt"
         "ft";
-    }
+    } 
     .header-section-layout{
         grid-area: hd;
         display: flex;
@@ -154,37 +181,40 @@ contents:
         flex: 1 0 100%;
         margin: 10px 0;
     }
-    .post-content-container{
-        box-sizing: border-box;
+    .content-grid-container{
         width: 100%;
         margin: 0 0;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto auto;
-        grid-template-areas: "cntn" 
+        grid-template-areas: "posts" 
         "rbar";
     }
-    .post-content-layout{
-        grid-area: cntn;
-        width: 98%;
-        margin:10px 1%;
+    .posts-section-layout{
+        grid-area: posts;
         display: flex;
         flex-flow: column wrap;
+        padding: 10px 0 10px 0;
+    }
+    .post-flex-item{
+        flex:1 1 98%;
+        max-width: 98%;
+        margin:10px 1%;
     }
 }
 
 /*layour for devices with width between 601px and 900px*/
 @media(min-width:601px) and (max-width:900px){
-    .post-grid-container{
-        box-sizing: border-box;
+    .blog-grid-container{
         width: 100%;
         margin: 0 0;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: auto auto 50px;
+        grid-template-rows: auto 350px auto 50px;
         grid-template-areas:
         "hd"
-        "post"
+        "ctg"
+        "ctnt"
         "ft";
     }
     .header-section-layout{
@@ -201,23 +231,27 @@ contents:
         max-width: 960px;
         margin: 0 auto;
     }
-    .post-content-container{
-        box-sizing: border-box;
+    .content-grid-container{
         width: auto;
         max-width: 1200px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(10, 10%);
         grid-template-rows: auto;
-        grid-template-areas: "cntn cntn cntn cntn cntn cntn cntn rbar rbar rbar";
+        grid-template-areas: "posts posts posts posts posts posts posts rbar rbar rbar";
     }
-    .post-content-layout{
-        grid-area: cntn;
-        width: 98%;
-        margin:0 1%;
+    .posts-section-layout{
+        grid-area: posts;
         display: flex;
         flex-flow: column wrap;
+        padding: 10px 0 10px 0;
+    }
+    .post-flex-item{
+        flex:1 1 98%;
+        max-width: 98%;
+        margin:10px 1%;
     }
 }
+
 
 

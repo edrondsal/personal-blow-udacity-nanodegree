@@ -31,13 +31,10 @@ contents:
     display: flex;
     flex-flow: column wrap;
 }
-.about-me-card-title{
+.about-me-card-name{
     align-self: center;
     margin: 5px 0;
 }
-.about-me-pharagraph{
-    align-self: center;
-    margin: 10px 10px;
-    font-style: italic;
-    font-size: 12px;
+.about-me-card-item{
+    margin: 5px 8px;
 }

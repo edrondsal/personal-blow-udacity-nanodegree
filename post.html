@@ -8,17 +8,17 @@ author: E. RONDON-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Post</title>
-        <link rel="stylesheet" href="css/post-layout.css">
+        <link rel="stylesheet" href="./css/post-layout.css">
     </head>
     <body class="site-background">
         <div class="post-grid-container">
             <!--TODO: complete the site with the elements styles and no only grid layout-->
             <!-- Header containing the Navbar of the Post-->
             <header class="header-section-layout header-section-style">
-                <img class="header-logo-layout header-logo-style" src="../common/img/logo-my-blog-blue.png" alt="blog logo">
+                <img class="header-logo-layout header-logo-style" src="./img/logo-my-blog-blue.png" alt="blog logo">
                 <nav class="navbar-global-container">
                     <ul class="navbar-flex-container navbar-container-style">
-                        <li class="navbar-flex-item"><a class="navbar-item-style" href="../page blog/index.html">HOME</a></li>
+                        <li class="navbar-flex-item"><a class="navbar-item-style" href="index.html">HOME</a></li>
                         <li class="navbar-flex-item"><a class="navbar-item-style" href="#">ABOUT ME</a></li>
                         <li class="navbar-flex-item"><a class="navbar-item-style" href="#">CONTACT</a></li>
                     </ul>
@@ -29,7 +29,7 @@ author: E. RONDON-->
             <section class="post-section-layout">
                 <div class="post-content-container">
                     <div class="post-content-layout post-content-style">
-                        <img class="post-image-style" src="../page post/img/rhodes-0.JPG" alt="post image">
+                        <img class="post-image-style" src="./img/rhodes-0.JPG" alt="post image">
                         <figcaption class="post-image-caption-style principal-color-text">Athena Temple - Lindos, Rhodes</figcaption>
                         <h1 class="secondary-color-text post-title-style">Rhodes Island</h1>
                         <hr class="post-content-separator">
@@ -50,8 +50,8 @@ author: E. RONDON-->
                             Nullam facilisis magna ut ipsum malesuada, vel eleifend nisl dignissim. Donec sit amet posuere libero, sed molestie felis. Sed et mauris diam.
                         </p>
                         <div class="post-citation-layout">
-                            <q class="post-citation-style secondary-color-text">In non fringilla orci. Morbi viverra finibus sollicitudin. Quisque tempor fringilla tempor</q>
-                            <p class="principal-color-text">Eduardo Rondon</p>
+                            <q class="secondary-color-text"><i>In non fringilla orci. Morbi viverra finibus sollicitudin. Quisque tempor fringilla tempor</i></q>
+                            <i class="principal-color-text">Eduardo Rondon</i>
                         </div>
                         <p class="post-inner-paragraph-style">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tristique massa in maximus. Maecenas at elit sem. 
                             Etiam rhoncus posuere lacus, sed faucibus metus interdum a. Donec consectetur sem tellus, in fringilla velit facilisis non. 
@@ -61,8 +61,8 @@ author: E. RONDON-->
                             Proin posuere lectus odio, eget imperdiet diam tincidunt ac.
                         </p>
                         <div class="post-double-image-layout">
-                            <img class="post-image-flex-item" src="../page post/img/rhodes-1.JPG" alt="post image">
-                            <img class="post-image-flex-item" src="../page post/img/rhodes-3.JPG" alt="post image">
+                            <img class="post-image-flex-item" src="./img/rhodes-1.JPG" alt="post image">
+                            <img class="post-image-flex-item" src="./img/rhodes-3.JPG" alt="post image">
                         </div>
                         <p class="post-inner-paragraph-style">Nulla a varius urna, et lobortis nibh. Cras maximus sagittis risus, eu pharetra orci sodales sed. 
                             Suspendisse nisl orci, pellentesque sit amet porta ac, auctor bibendum felis. 
@@ -79,27 +79,28 @@ author: E. RONDON-->
                         <h3 class="secondary-color-text post-title-style">Share this post:</h3>
                         <div class="share-button-row-style">
                             <a href="#" class="share-button-style facebook-button-style">
-                                <img class="share-button-image-style" src="../page post/img/facebook-logo.png">
+                                <img class="share-button-image-style" src="./img/facebook-logo.png">
                                 <p class="share-button-name-style">FACEBOOK</p>
                             </a>
                             <a href="#" class="share-button-style twitter-button-style">
-                                <img class="share-button-image-style" src="../page post/img/twitter-logo.png">
+                                <img class="share-button-image-style" src="./img/twitter-logo.png">
                                 <p class="share-button-name-style">TWITTER</p>
                             </a>
                             <a href="#" class="share-button-style linkedin-button-style">
-                                <img class="share-button-image-style" src="../page post/img/linkedin-logo.png">
+                                <img class="share-button-image-style" src="./img/linkedin-logo.png">
                                 <p class="share-button-name-style">LINKEDIN</p>
                             </a>
                         </div>
                     </div>
                     <div class="post-right-bar-layout">
                         <article class="right-bar-flex-item about-me-card-container">
-                            <img class="about-me-card-image" src="../page post/img/profile-image-second.png" alt="post image">
+                            <img class="about-me-card-image" src="./img/profile-image-second.png" alt="post image">
                             <div class="about-me-card-body-container">
-                                <h4 class="secondary-color-text bout-me-card-title">Eduardo Rondon</h4>
-                                <p class="secondary-color-text about-me-pharagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Morbi hendrerit sed ex eget tincidunt. 
-                                </p>
+                                <h4 class="secondary-color-text about-me-card-name">Eduardo Rondon</h4>
+                                <p class="secondary-color-text about-me-card-item"><b>Title:</b><i>&nbspSystem Group Leader</i></p>
+                                <p class="secondary-color-text about-me-card-item"><b>Company:</b>&nbspVSeA GmbH</p>
+                                <p class="secondary-color-text about-me-card-item"><b>Bio:</b><i>&nbspLorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Morbi hendrerit sed ex eget tincidunt.</i></p>
                             </div>
                         </article>
                         <article class="right-bar-flex-item list-card-container">
@@ -107,27 +108,27 @@ author: E. RONDON-->
                                 <h5 class="list-card-title-flex-item-layout secondary-color-text">CATEGORIES</h5>
                                 <hr class="list-card-title-separator">
                                 <a href="#" class="row-list-item">
-                                   <p class="secondary-color-text">Recipes</p>
+                                   <b class="secondary-color-text">Recipes</b>
                                    <p class="badge">4</p>    
                                 </a>
                                 <a href="#" class="row-list-item">
-                                    <p class="secondary-color-text">Travel</p>
+                                    <b class="secondary-color-text">Travel</b>
                                     <p class="badge">5</p>    
                                 </a>
                                 <a href="#" class="row-list-item">
-                                    <p class="secondary-color-text">Programming</p>
+                                    <b class="secondary-color-text">Programming</b>
                                     <p class="badge">3</p>    
                                 </a>  
                                 <a href="#" class="row-list-item">
-                                    <p class="secondary-color-text">Sport</p>
+                                    <b class="secondary-color-text">Sport</b>
                                     <p class="badge">2</p>    
                                 </a> 
                                 <a href="#" class="row-list-item">
-                                    <p class="secondary-color-text">Photography</p>
+                                    <b class="secondary-color-text">Photography</b>
                                     <p class="badge">6</p>    
                                 </a>  
                                 <a href="#" class="row-list-item">
-                                    <p class="secondary-color-text">Work</p>
+                                    <b class="secondary-color-text">Work</b>
                                     <p class="badge">2</p>    
                                 </a>                                                                                                                              
                             </div>
@@ -136,48 +137,48 @@ author: E. RONDON-->
                             <div class="list-card-body-container">
                                 <h5 class="list-card-title-flex-item-layout secondary-color-text">POPULAR POSTS</h5>
                                 <hr class="list-card-title-separator">
-                                <a href="../page post/post.html" class="list-card-item-layout post-row-item-container">
-                                    <img class="post-row-item-image" src="../page blog/img/rhodes-island-travel.JPG" alt="post image">
+                                <a href="post.html" class="list-card-item-layout post-row-item-container">
+                                    <img class="post-row-item-image" src="./img/rhodes-island-travel.JPG" alt="post image">
                                     <div class="post-row-content-layout">
-                                        <p class="secondary-color-text">Rhode Island</p>
+                                        <u class="secondary-color-text">Rhode Island</u>
                                         <p class="principal-color-light-text inline-list">Travel</p>
                                         <p class="secondary-color-text inline-list">15.08.2019</p>
                                     </div>
                                 </a>
                                 <a href="#" class="list-card-item-layout post-row-item-container">
-                                    <img class="post-row-item-image" src="../page blog/img/bali-island-travel.JPG" alt="post image">
+                                    <img class="post-row-item-image" src="./img/bali-island-travel.JPG" alt="post image">
                                     <div class="post-row-content-layout">
-                                        <p class="secondary-color-text">Bali Island</p>
+                                        <u class="secondary-color-text">Bali Island</u>
                                         <p class="principal-color-light-text inline-list">Travel</p>
                                         <p class="secondary-color-text inline-list">15.07.2014</p>
                                     </div>
                                 </a>
                                 <a href="#" class="list-card-item-layout post-row-item-container">
-                                    <img class="post-row-item-image" src="../page blog/img/playa-del-carmen-travel.JPG" alt="post image">
+                                    <img class="post-row-item-image" src="./img/playa-del-carmen-travel.JPG" alt="post image">
                                     <div class="post-row-content-layout">
-                                        <p class="secondary-color-text">Playa del Carmen</p>
+                                        <u class="secondary-color-text">Playa del Carmen</u>
                                         <p class="principal-color-light-text inline-list">Travel</p>
                                         <p class="secondary-color-text inline-list">10.04.2016</p>
                                     </div>
                                 </a>
                                 <a href="#" class="list-card-item-layout post-row-item-container">
-                                    <img class="post-row-item-image" src="../page blog/img/crete-island-travel.JPG" alt="post image">
+                                    <img class="post-row-item-image" src="./img/crete-island-travel.JPG" alt="post image">
                                     <div class="post-row-content-layout">
-                                        <p class="secondary-color-text">Crete Island</p>
+                                        <u class="secondary-color-text">Crete Island</u>
                                         <p class="principal-color-light-text inline-list">Travel</p>
                                         <p class="secondary-color-text inline-list">23.06.2018</p>
                                     </div>
                                 </a>
                                 <a href="#" class="list-card-item-layout post-row-item-container">
-                                    <img class="post-row-item-image" src="../page blog/img/mallorca-island-travel.JPG" alt="post image">
+                                    <img class="post-row-item-image" src="./img/mallorca-island-travel.JPG" alt="post image">
                                     <div class="post-row-content-layout">
-                                        <p class="secondary-color-text">Mallorca Island</p>
+                                        <u class="secondary-color-text">Mallorca Island</u>
                                         <p class="principal-color-light-text inline-list">Travel</p>
                                         <p class="secondary-color-text inline-list">10.08.2013</p>
                                     </div>
                                 </a>
                             </div>
-                        </article>                                             
+                        </article>                                            
                     </div>
                 </div>
             </section>  
